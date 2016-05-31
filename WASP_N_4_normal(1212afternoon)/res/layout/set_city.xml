@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <include layout="@layout/title_activity"/>
+   <TextView 
+       android:id="@+id/set_tx"
+       android:layout_marginTop="10dp"
+           android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+       android:layout_width="match_parent"
+       android:textSize="@dimen/medium_text"
+       android:layout_height="wrap_content"
+       android:text="请选择您要获得天气信息的城市："/>
+   <FrameLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   <TableLayout
+           android:layout_marginLeft="8dp"
+    	android:layout_marginRight="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       >
+       <TableRow >
+           <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择省份："/>
+          <!--  <Spinner 
+		       android:id="@+id/set_sp1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="left"
+		       />  -->
+		         <Button 
+		       android:id="@+id/set_sp1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       android:background="@android:color/transparent"
+		       android:text="-省份-"
+		       /> 
+       </TableRow>
+     <!--   <TableRow 
+           android:id="@+id/table_1"
+           android:visibility="gone">
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："
+		       android:visibility="invisible"/>
+		        <ListView
+		       android:id="@+id/list_1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       />  
+       </TableRow> -->
+       <TableRow >
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："/>
+	      <!--  <Spinner 
+		       android:id="@+id/set_sp2"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="right"
+		       />  --> 
+		        <Button
+		       android:id="@+id/set_sp2"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		        android:background="@android:color/transparent"
+		       android:text="-城市-"
+		       />  
+       </TableRow>
+      <!--  <TableRow
+           android:id="@+id/table_2" 
+           android:visibility="gone">
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："
+		       android:visibility="invisible"/>
+	     
+		        <ListView
+		       android:id="@+id/list_2"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       />  
+       </TableRow> -->
+</TableLayout>
+<TableLayout
+           android:layout_marginLeft="8dp"
+    	android:layout_marginRight="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       >
+       <TableRow 
+           android:visibility="invisible">
+           <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择省份："/>
+          <!--  <Spinner 
+		       android:id="@+id/set_sp1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="left"
+		       />  -->
+		         <Button 
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       android:background="@android:color/transparent"
+		       android:text="-省份-"
+		       /> 
+       </TableRow>
+       <TableRow 
+           android:id="@+id/table_1"
+           android:visibility="gone">
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："
+		       android:visibility="invisible"/>
+		        <ListView
+		       android:id="@+id/list_1"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       android:background="@color/gray"
+		       />  
+       </TableRow>
+       <TableRow 
+           android:visibility="invisible">
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："/>
+		        <Button
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		        android:background="@android:color/transparent"
+		       android:text="-城市-"
+		       />  
+       </TableRow>
+       <TableRow
+           android:id="@+id/table_2" 
+           android:visibility="gone">
+            <TextView 
+		       android:layout_width="match_parent"
+		       android:textSize="@dimen/medium_text"
+		       android:layout_height="wrap_content"
+		       android:text="请选择城市："
+		       android:visibility="invisible"/>
+	     
+		        <ListView
+		       android:id="@+id/list_2"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:gravity="center"
+		       android:background="@color/gray"
+		       />  
+       </TableRow>
+</TableLayout>
+</FrameLayout>
+	   <Button 
+         android:id="@+id/set_city_ok"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="确定"
+         android:textSize="@dimen/medium_text"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="8dp"
+         android:layout_gravity="right"
+         android:visibility="gone"/>
+</LinearLayout>

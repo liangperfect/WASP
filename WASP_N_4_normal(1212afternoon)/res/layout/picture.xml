@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+      />
+    <!-- <AbsoluteLayout
+        android:id="@+id/layout_pic"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"> -->
+        <LinearLayout
+        android:id="@+id/save_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+         <ImageView
+            android:id="@+id/pic_up" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/zoom_out"
+            android:layout_weight="1"
+            />
+          <ImageView
+            android:id="@+id/pic_down" 
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/zoom_in"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/save_pic" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/save"
+            android:layout_weight="1"
+            />
+        
+    </LinearLayout>
+         <ImageView
+        android:id="@+id/picture_display"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_weight="1"
+        android:src="@drawable/default_avatar"/>
+    <!-- </AbsoluteLayout> -->
+   
+
+</LinearLayout>

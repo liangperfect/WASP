@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+  <!--   android:background="#A8A8A8"
+    android:orientation="vertical" > -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="第几栏"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采集时间"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_gather_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="2014-7-31" 
+                android:textSize="@dimen/small_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签:"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <com.xiaoguo.wasp.mobile.widget.ListTextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1.0"
+                android:text="N/A" 
+                 android:textSize="@dimen/small_text"/>
+
+            <com.xiaoguo.wasp.mobile.widget.ListButton
+                android:id="@+id/btn_setTag"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/selecor_set_tag_btn"
+                android:text="标签设置"
+                 android:textSize="@dimen/small_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备状态"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_device_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="N/A"
+             android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电量状态"
+             android:layout_marginLeft="20dp"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_device_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="N/A"
+             android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/monitor_control_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/toggle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水闸状态"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.MyToggleButton
+            android:id="@+id/toggle_value_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector"
+            android:gravity="center"
+            android:textColor="#ffffff"
+             android:textSize="@dimen/small_text"
+              android:paddingLeft="5dp"
+           android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/toggle_value_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="已打开"
+             android:textSize="@dimen/small_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/toggle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="卷帘状态"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.MyToggleButton
+            android:id="@+id/toggle_value_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/toggle_selector"
+            android:gravity="center"
+            android:textColor="#ffffff"
+             android:textSize="@dimen/small_text"
+              android:paddingLeft="5dp"
+           android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/toggle_value_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="已打开"
+             android:textSize="@dimen/small_text"
+            android:visibility="gone" />
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/monitor_control_bar_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/toggle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水闸状态"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.MyToggleButton
+            android:id="@+id/toggle_value_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector"
+            android:gravity="center"
+            android:textColor="#ffffff"
+             android:textSize="@dimen/small_text"
+              android:paddingLeft="5dp"
+           android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/toggle_value_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="已打开"
+             android:textSize="@dimen/small_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/toggle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="卷帘状态"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.MyToggleButton
+            android:id="@+id/toggle_value_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/toggle_selector"
+            android:gravity="center"
+            android:textColor="#ffffff"
+             android:textSize="@dimen/small_text"
+              android:paddingLeft="5dp"
+           android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/toggle_value_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="已打开"
+             android:textSize="@dimen/small_text"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- 开始 -->
+	<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+       		android:layout_marginTop="8dp"
+            android:text="实时数据"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="类别"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="当前值"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="参考范围"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <!-- 结束 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tempure"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="温度(℃)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/tempure_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/tempure_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/moist"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="湿度(%)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/moist_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/moist_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/soilTemperature"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="土壤温度(℃)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/soilTemperature_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/soilTemperature_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/soilhumidity"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="土壤湿度(%)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/soilumidity_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/soilumidity_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/photosynthetic"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="光合作用(Qp)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/photosynthetic_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/photosynthetic_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/radiation"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="硅光辐射(Qp)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/radiation_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/radiation_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/carbondioxide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="二氧化碳(ppm)"
+            android:textColor="#3333FF"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/carbondioxide_now"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/carbondioxide_wide"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:text="N/A"
+            android:textColor="@color/gray_tip"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+</LinearLayout>

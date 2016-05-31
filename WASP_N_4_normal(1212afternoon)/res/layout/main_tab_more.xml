@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/data_integration"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="1.0dip"
+            android:layout_weight="1.0"
+            android:text="数据集成"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:typeface="monospace"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/Im"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="1.0dip"
+            android:layout_weight="1.0"
+            android:text="专家咨询"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/monitor"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="1.0dip"
+            android:layout_weight="1.0"
+            android:text="实时监控"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:typeface="monospace" />
+
+        <RadioButton
+            android:id="@+id/more_setting"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="1.0dip"
+            android:layout_weight="1.0"
+            android:text="我的设置 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

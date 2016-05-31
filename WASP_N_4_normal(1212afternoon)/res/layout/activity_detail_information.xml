@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailInformationActivity" >
+
+    <include layout="@layout/title_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/detailTempure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="温度："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_tempure_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_tempure_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/detailMoist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="湿度："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_moist_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_moist_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/detailSoilTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="土壤温度："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_soilTemperature_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_soilTemperature_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/detailPhotosynthetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="光合作用："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_photosynthetic_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="20"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_photosynthetic_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/detailSoilhumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="土壤湿度："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_soilumidity_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/detail_soilumidity_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/radiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="硅光辐射："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/radiation_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/radiation_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/carbondioxide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="二氧化碳："
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/carbondioxide_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/carbondioxide_wide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="N/A"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卷帘门状态:"
+            android:textSize="@dimen/medium_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.WiperSwitch
+            android:id="@+id/rollerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="閥門状态:"
+            android:textSize="@dimen/medium_text" />
+
+        <com.xiaoguo.wasp.mobile.widget.WiperSwitch
+            android:id="@+id/sluiceSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+</LinearLayout>

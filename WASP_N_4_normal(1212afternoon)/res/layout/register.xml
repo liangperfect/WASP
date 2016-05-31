@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_title"
+        layout="@layout/title_activity" />
+
+    <EditText
+        android:id="@+id/input_student_number"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/register_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_input_top"
+        android:hint="请输入您的账号"
+        android:inputType="text"
+        android:padding="8dip" />
+
+    <View
+        android:id="@+id/divider_input_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/input_student_number"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/divider_input" />
+
+    <EditText
+        android:id="@+id/input_phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/divider_input_one"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_input_center"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:padding="8dip" />
+
+    <View
+        android:id="@+id/divider_input_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/input_phone_number"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/divider_input" />
+
+    <EditText
+        android:id="@+id/input_verification_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_input_two"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_input_center"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:padding="8dip" />
+
+    <View
+        android:id="@+id/divider_input_three"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/input_verification_code"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/divider_input" />
+
+    <Button
+        android:id="@+id/select_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_verification_code"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_input_bottom"
+        android:hint="请选择您所在区县"
+        android:textColor="@color/gray_tip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_city"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="服务类型:"
+            android:textSize="@dimen/medium_text" />
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plant_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="种植类型:"
+            android:textSize="@dimen/medium_text" />
+
+        <Spinner
+            android:id="@+id/botany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 所在城市选择 -->
+
+    <LinearLayout
+        android:id="@+id/select_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_verification_code"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:text="请选择省市区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <com.xiaoguo.wasp.mobile.widget.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.xiaoguo.wasp.mobile.widget.WheelView>
+
+            <com.xiaoguo.wasp.mobile.widget.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.xiaoguo.wasp.mobile.widget.WheelView>
+
+            <com.xiaoguo.wasp.mobile.widget.WheelView
+                android:id="@+id/id_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.xiaoguo.wasp.mobile.widget.WheelView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_verification_code"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/select_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_submit_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交注册信息"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

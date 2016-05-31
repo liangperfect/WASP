@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="center"
+     android:padding="8dip"
+     >
+    
+    <TextView 
+        	android:id="@+id/newsTime"
+	        android:layout_width="match_parent"
+	     	android:layout_height="wrap_content"
+	     	android:textColor="@color/gray_tip"
+	     	android:textSize="@dimen/small_text"
+	     	android:text="周日 14:23"
+	     	android:gravity="center"
+	     	android:layout_marginTop="8dip"
+	        />
+    
+    <RelativeLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="center_vertical"
+	     >
+	    <ImageView 
+	        android:layout_width="@dimen/small_avatar_width"
+		   	android:layout_height="@dimen/small_avatar_height"
+		   	android:id="@+id/newsIcon"
+		   	android:scaleType="fitXY"
+		   	android:src="@drawable/head_default_yixin"
+		   	android:layout_marginLeft="8dip"
+		   	android:layout_alignParentRight="true"
+		   	android:layout_marginRight="8dp"
+	      />
+	    
+	     <TextView 
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:id="@+id/newsTitle"
+	     	android:textColor="@color/black"
+	     	android:textSize="@dimen/big_text"
+	     	android:text="消息标题"
+	     	android:ellipsize="end"
+	     	android:singleLine="false"
+	     	android:layout_toLeftOf="@id/newsIcon"
+	     	android:gravity="right"
+	     	android:visibility="gone"
+	        /> 
+	      <ImageView 
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:id="@+id/newsImg"
+	     	android:layout_toLeftOf="@id/newsIcon"
+	     	android:gravity="right"
+	     	android:background="@drawable/balloon_l"
+	     	android:src="@drawable/default_avatar"
+	     	android:visibility="gone"
+	        />   
+	     <include layout="@layout/send_foler_item"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_toLeftOf="@id/newsIcon"
+	     	android:gravity="right"
+	     	android:id="@+id/send_folder_2"
+	     	android:background="@drawable/balloon_l"/>
+    
+     <!-- <LinearLayout 
+            android:id="@+id/voice_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@id/newsIcon"
+            android:visibility="gone"
+           >
+            <TextView 
+                android:id="@+id/voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nihdjai1'"
+                android:textSize="@dimen/medium_text"
+                android:gravity="center_vertical"/>
+             <ImageView 
+                android:id="@+id/voice_volumn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/velumn_right_3"/>
+        </LinearLayout> -->
+        <com.xiaoguo.wasp.mobile.widget.PalyVoiceLayoutRight
+            android:id="@+id/voice_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/newsIcon"
+            android:visibility="gone"
+            />
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:padding="8dip"
+     >
+    <TextView 
+        android:id="@+id/messageTime"
+        android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:textColor="@color/gray_tip"
+     	android:textSize="@dimen/small_text"
+     	android:text="周日 14:23"
+     	android:gravity="center"
+     	android:layout_marginTop="8dip"
+        />
+    
+    <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:layout_marginTop="8dip"
+	     >
+	     <ImageView 
+	        android:layout_width="@dimen/small_avatar_width"
+	     	android:layout_height="@dimen/small_avatar_height"
+	     	android:id="@+id/senderAvatar"
+	     	android:scaleType="fitXY"
+	     	android:src="@drawable/head_default_yixin"
+	     	android:layout_marginRight="8dip"
+        />
+       <TextView 
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:id="@+id/messageContent"
+	     	android:textColor="@color/black"
+	     	android:textSize="@dimen/medium_text"
+	     	android:background="@drawable/chatfrom_bg_pressed"
+	     	android:text="信息内容信息内容信息内容信fr阿双方完全放弃为夫妻感情给我息"
+	     	android:visibility="gone"
+        />
+        <ImageView
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:id="@+id/messageImg"
+	     	android:background="@drawable/balloon_r"
+	     	android:src="@drawable/default_avatar"
+	     	android:visibility="gone"
+        />
+        <include layout="@layout/send_foler_item"
+            android:visibility="gone"
+             android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:id="@+id/send_folder_1"
+	     	android:background="@drawable/balloon_r"
+	     	/>
+       <!--  <LinearLayout 
+            android:id="@+id/voice_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+           >
+            <ImageView 
+                android:id="@+id/voice_volumn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/velumn_left_3"/>
+            <TextView 
+                android:id="@+id/voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nihdjai1'"
+                android:textSize="@dimen/medium_text"
+                android:gravity="center_vertical"/>
+        </LinearLayout> -->
+        <com.xiaoguo.wasp.mobile.widget.PlayVoiceLayoutLeft
+            android:id="@+id/voice_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </LinearLayout>    
+       
+    
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@color/green" >
+
+    <Button
+        android:id="@+id/bt_left"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn_back"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bt_right"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_ok"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/bt_right"
+        android:layout_toRightOf="@+id/bt_left"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="标题" />
+
+</RelativeLayout>

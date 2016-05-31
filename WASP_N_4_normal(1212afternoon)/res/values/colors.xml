@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="red">#EE4000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#EEEE00</color>
+    <color name="region">#8000ff00</color>
+    <color name="listTitle">#ff23323b</color>
+    <color name="text">#ff848f9b</color>
+    <color name="orange">#ffa500</color>
+    <color name="color_tip">#b6321f</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_sliver">#E6E8FA</color>
+    <color name="gray">#cccccc</color>
+    <color name="dark">#333333</color>
+    <color name="gray_tip">#808080</color>
+    <color name="created_by_other">#ff9933</color>
+    <color name="created_by_self">#00CCFF</color>
+    <color name="list_item_color">#B6DA52</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="bgColor">#000000</color>
+    <color name="border_line">#ffd7dadc</color>
+    <color name="green">#008000</color>
+    <color name="light_green">#008a00</color>
+    <color name="light_bule">#b0e0e6</color>
+    <color name="siliver">#c0c0c0</color>
+    <color name="transparent">#90000000</color>
+    <!-- 后期添加的颜色 -->
+    <color name="navy">#000080</color>
+
+    <drawable name="drawableGray_tip">#808080</drawable>
+    <drawable name="drawable_black">#000000</drawable>
+
+    <!-- 浅灰色 -->
+    <color name="light_gray">#EBEBEB</color>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white">
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical">
+		<!-- 	<include layout="@layout/search"
+			    android:id="@+id/search_friends"/> -->
+<RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="8dip"
+   	android:layout_marginRight="8dip"
+     >
+    <EditText 
+        android:id="@+id/search_input1"
+        android:layout_width="match_parent"
+     	android:layout_height="45dp"
+     	android:background="@drawable/bg_input_single"
+     	android:hint="查找"
+     	android:padding="8dip"
+     	android:layout_marginTop="10dp"
+     	android:focusable="true"  
+   		android:focusableInTouchMode="true"
+        />
+    <ImageView
+        android:id="@+id/search_img1" 
+        android:layout_width="45dp"
+     	android:layout_height="45dp"
+        android:src="@drawable/ic_search_normal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
+			<com.xiaoguo.wasp.mobile.widget.PullDownView
+        android:id="@+id/expert_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white"
+       >
+    </com.xiaoguo.wasp.mobile.widget.PullDownView>
+			 <ListView android:id="@+id/search_list_21"
+			     android:layout_marginTop="10dp"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:cacheColorHint="#00000000"
+				android:visibility="gone"/>
+		
+			<!-- <ListView android:id="@+id/main_invite_list"
+			    android:layout_marginTop="10dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:cacheColorHint="#00000000"/> -->
+		</LinearLayout>
+
+</LinearLayout>

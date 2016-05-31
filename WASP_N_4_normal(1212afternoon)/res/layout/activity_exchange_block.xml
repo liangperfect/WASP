@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeBlockActivity" >
+
+    <LinearLayout
+        android:id="@+id/list_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3.0" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:gravity="center_horizontal"
+            android:text="@string/column_classification"
+            android:textSize="@dimen/middle_text"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/block_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="关闭"
+            android:textColor="#00BFFF"
+            android:textSize="@dimen/middle_text"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/block_names"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/list_title"
+        android:layout_below="@id/list_title"
+        android:background="@color/white"
+        android:cacheColorHint="@color/black"
+        android:divider="@color/gray_tip"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</RelativeLayout>

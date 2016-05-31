@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoguo.wasp"
+    android:versionCode="1"
+    android:versionName="2.0.01" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 音频刻录权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.baidu.frontia.FrontiaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/wasp_new_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.WelcomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 初始化界面 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.BeforeMainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册第一步 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 用户信息 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.UserBaseInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.UpDataUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.AboutMeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.FieldsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.userinfo.ResetBackgroundActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 气象信息模块 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.WeatherInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.ArticleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.DisasterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.WriteDisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.SetCityActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 生产提示 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.warning.ProductWarningActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 实时监控模块 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.ExpertRealtimeMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.RealtimeMoniterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="org.achartengine.chartdemo.demo.chart.XYChartBuilder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.achartengine.chartdemo.demo.chart.PieChartBuilder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.DetailInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.ExpertSerchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 聊天模块 -->
+        <!--
+             <activity android:name=".mobile.ui.chat.ChatActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        -->
+
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.ChatBriefActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.ChatLayoutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.MyFileManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.AddFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.PictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.ChatPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.ChatRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.chat.ChatContactorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 系统设置模块 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.setting.AboutAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.setting.ResetPswdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.setting.AuthorActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 获取联系人的service -->
+        <service
+            android:name="com.xiaoguo.wasp.mobile.xmpphelper.IMContactService"
+            android:screenOrientation="portrait" />
+        <!-- 获取聊天的service -->
+        <service
+            android:name="com.xiaoguo.wasp.mobile.xmpphelper.IMChatService"
+            android:screenOrientation="portrait" />
+        <!-- 文件传输的service -->
+        <service
+            android:name="com.xiaoguo.wasp.mobile.xmpphelper.fileListenerService"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.xiaoguo.wasp.mobile.xmpphelper.MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="lovesong.newmessage" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaoguo.wasp.mobile.xmpphelper.MyPushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收 push 消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收 bind、setTags 等 method 的返回结果 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 可选。接受通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证 PushService 正常运行 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <!-- Push 服务接收客户端发送的各种请求 -->
+        <!--
+			注意：RegistrationReceiver 在 2.1.1 及之前版本有拼写失误，为 RegistratonReceiver ，用新
+			版本 SDK 时请更改为如下代码
+        -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Push 服务 -->
+        <!-- 注意：在 4.0 (包含)之后的版本需加上如下所示的 intent-filter action -->
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push service end -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.PushMonitorActivity"
+            android:label="@string/title_activity_push_monitor" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.MoniterChartActivity"
+            android:label="@string/title_activity_moniter_chart" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.MessageMointerActivity"
+            android:label="@string/title_activity_message_mointer" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.monitor.AllGreenHouseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.MainActivityTab"
+            android:label="@string/title_activity_main_activity_tab" >
+        </activity>
+        <!-- 气象服务 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.weatherinfo.WeatherActivityBaiDu"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.warning.DisterWarmingActivity"
+            android:label="@string/title_activity_dister_warming" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.warning.DisterWarmingDetailedActivity"
+            android:label="@string/title_activity_dister_warming_detailed" >
+        </activity>
+
+        <!-- 相关预报 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.forecast.RelevantForecastActivity"
+            android:label="@string/title_activity_relevant_forecast" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.forecast.ForecastInfoDetailActivity"
+            android:label="@string/title_activity_forecast_info_detail" >
+        </activity>
+
+        <!-- 论坛交流模块 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.communication.CommunicationActivity"
+            android:label="@string/title_activity_communication"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.communication.ExchangeBlockActivity"
+            android:label="@string/title_activity_exchange_block"
+            android:launchMode="standard"
+            android:theme="@style/MyTransparent" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.communication.CommunicationDetailActivity"
+            android:label="@string/title_activity_communication_detail" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.communication.CommentEditActivity"
+            android:label="@string/title_activity_comment_edit" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.communication.CommentListActivity"
+            android:label="@string/title_activity_comment_list" >
+        </activity>
+
+        <!-- 生产提示 -->
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.warning.ProductPromptActivity"
+            android:label="@string/title_activity_product_prompt" >
+        </activity>
+        <activity
+            android:name="com.xiaoguo.wasp.mobile.ui.warning.ProductGuideDetailedActivity"
+            android:label="@string/title_activity_product_detail" >
+        </activity>
+    </application>
+
+</manifest>

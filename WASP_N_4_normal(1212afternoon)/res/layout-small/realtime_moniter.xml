@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="当前时间:"
+            android:textSize="@dimen/big_text" 
+            android:visibility="gone"/>
+               <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014年4月24日  10:21"
+            android:textSize="@dimen/big_text" 
+            android:visibility="gone"/>
+ 		<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:orientation="horizontal">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="所在地区"
+	            android:textStyle="bold"
+	            android:textSize="@dimen/micro_text"/>
+	        <TextView 
+	            android:id="@+id/house_location"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/micro_text"
+	            android:layout_marginLeft="5dp"
+	            android:layout_weight="1"/>
+	         <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="所属农户"
+	              android:textStyle="bold"
+	            android:textSize="@dimen/micro_text"/>
+	        <TextView 
+	            android:id="@+id/house_owner"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:textSize="@dimen/micro_text"
+	            android:layout_weight="1"/> 
+	    </LinearLayout>
+		 <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginLeft="5dp"
+		        android:orientation="horizontal">
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="种植类型"
+		            android:textStyle="bold"
+		            android:textSize="@dimen/micro_text"/>
+		        <TextView 
+		            android:id="@+id/house_tag"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:textSize="@dimen/micro_text"/>
+
+		         <Button
+		             android:id="@+id/reset_house"
+		             android:layout_width="wrap_content"
+		             android:layout_height="33dp"
+		             android:layout_marginLeft="16dp"
+		             android:background="@drawable/selecor_set_tag_btn"
+		             android:gravity="center"
+		             android:text="修改"
+		             android:textSize="@dimen/micro_text" />
+
+		    </LinearLayout>
+    </LinearLayout>
+	 <com.xiaoguo.wasp.mobile.widget.PullDownView
+	        android:id="@+id/realtime_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@android:color/white" >
+	    </com.xiaoguo.wasp.mobile.widget.PullDownView>
+</LinearLayout>

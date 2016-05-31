@@ -1,0 +1,36 @@
+<root>
+    <province name="江西省">
+    <city name="抚州">
+      <district name="资溪" zipcode="332900" />
+      <district name="黎川" zipcode="332900" />
+      <district name="广昌" zipcode="332900" />
+      <district name="宜黄" zipcode="332900" />
+      <district name="崇仁" zipcode="332900" />
+      <district name="乐安" zipcode="332900" />
+    </city>
+    <city name="赣州">
+      <district name="安远" zipcode="341000" />
+      <district name="赣县" zipcode="341000" />
+      <district name="会昌" zipcode="341000" />
+      <district name="宁都" zipcode="341000" />
+      <district name="瑞金" zipcode="341000" />
+      <district name="石城" zipcode="341000" />
+      <district name="信丰" zipcode="341000" />
+      <district name="兴国" zipcode="341000" />
+    </city>
+    <city name="吉安">
+      <district name="安福" zipcode="343000" />
+      <district name="永丰" zipcode="343000" />
+      <district name="泰和" zipcode="343000" />
+      <district name="峡江" zipcode="343000" />
+      <district name="万安" zipcode="343000" />
+    </city>
+    
+    <city name="宜春">
+      <district name="上高" zipcode="336000" />
+    </city>
+    
+  </province>
+    
+    
+</root>

@@ -1,0 +1,362 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserBaseInfoActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green" >
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/saveAndEdit"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="编辑"
+            android:textSize="@dimen/big_text" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btnExit"
+            android:layout_alignRight="@id/saveAndEdit"
+            android:layout_centerVertical="true"
+            android:text="基本信息"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/large_text" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:text="账        户:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/userIDText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/userID"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/userID" />
+
+            <TextView
+                android:id="@+id/nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/userID"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="昵        称:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/nickNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/nickName"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/nickName" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/nickName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="性        别:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sexText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sex"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/sex"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/registerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/sex"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="注册时间:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/registerTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/registerTime"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/registerTime"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/registerTime"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="出生日期:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/birthdayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/birthday"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/birthday"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/birthday"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="部门:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/departmentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/department"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/department"
+                android:text="农业部"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/department"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="电子邮件:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mailAddressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mailAddress"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mailAddress"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/userTelNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/mailAddress"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="电话号码:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/userTelNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/userTelNumber"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/userTelNumber" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/userTelNumber"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="家庭地址:"
+                android:textSize="@dimen/medium_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/address"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/address"
+                android:visibility="gone" />
+            <!-- 种烟规模 -->
+
+            <TextView
+                android:id="@+id/user_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="种烟规模:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/user_scale_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/user_scale"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/user_scale" />
+
+            <!-- 种烟年限 -->
+
+            <TextView
+                android:id="@+id/user_plant_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/user_scale"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="种烟年限:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/user_plant_year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/user_plant_year"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/user_plant_year" />
+
+            <!-- 烟田位置 -->
+
+            <TextView
+                android:id="@+id/user_plant_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/user_plant_year"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="烟田位置:"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/user_plant_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/user_plant_location"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/user_plant_location" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_plant_location"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/attention_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="关注领域:"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/attention_field_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/attention_field_detai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.21"
+                    android:text="设置"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="120dip"
+                android:layout_height="130dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/head_default_yixin" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

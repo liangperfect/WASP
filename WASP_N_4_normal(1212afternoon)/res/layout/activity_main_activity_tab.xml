@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lineer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/containerBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:measureAllChildren="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/main_radio"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="5.0" >
+
+                <RadioButton
+                    android:id="@+id/tab_weather"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="气象服务"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace" />
+
+                <RadioButton
+                    android:id="@+id/tab_diaster"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="预报服务"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace" />
+
+                <RadioButton
+                    android:id="@+id/tab_setting"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="预警服务"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/tab_produce"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="生产指导"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace" />
+
+                <RadioButton
+                    android:id="@+id/tab_im"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="技术交流"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace" />
+
+                <RadioButton
+                    android:id="@+id/tab_more"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="更多"
+                    android:textColor="@color/gray_tip"
+                    android:textSize="@dimen/small_text"
+                    android:typeface="monospace" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

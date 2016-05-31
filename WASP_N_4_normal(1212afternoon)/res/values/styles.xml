@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_app</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="title_right_oper_text">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="tip_text">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textColor">#fe000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="topbar_bg">
+        <item name="android:gravity">center_vertical</item>
+        <!-- <item name="android:background">@drawable/top_bar_bg</item> -->
+        <item name="android:background">@color/green</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46.0dip</item>
+    </style>
+
+    <style name="topbar_text">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="topbar_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="topbar_left_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="topbar_right_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginRight">7.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+  //进入时的动画                                   <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    //退出时的动画   </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item> -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item> <!-- 将原来系统的RadioButton图标给隐藏起来 -->
+        <item name="android:singleLine">true</item>
+        <!-- <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item> -->
+        <item name="android:layout_weight">1.2</item>
+    </style>
+
+    <style name="MyTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+</resources>
